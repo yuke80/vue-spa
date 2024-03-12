@@ -1,0 +1,13 @@
+/* ラベル
+/*-------------------------*/
+@import './newvariables';
+
+.label{
+
+  &-blue{
+    display: inline-block;
+    background: $blue;
+    color: $white;
+    padding: .4em 1.4em;
+  }
+}

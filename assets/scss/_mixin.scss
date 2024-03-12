@@ -1,0 +1,20 @@
+/* ミックスイン
+/*-------------------------*/
+
+// ブレイクポイント設定
+$tabL: 1366px; // iPad Pro横
+$tabH: 1024px; // iPad Pro縦、iPad横
+$tab: 768px;   // iPad縦
+$sp: 480px;    // スマホ
+
+@mixin tabL {@media (max-width: ($tabL)) {@content;}}
+@mixin tabH {@media (max-width: ($tabH)) {@content;}}
+@mixin tab {@media (max-width: ($tab)) {@content;}}
+@mixin sp {@media (max-width: ($sp)) {@content;}}
+@mixin pc {@media (min-width: ($tabH)) {@content;}}
+
+// デザインのpx値をvwに変換
+$baseViewPoint: 375; // デザインの横幅を指定
+@function pv($pxValue) {
+  @return (($pxValue / $baseViewPoint) * 100) + vw;
+}

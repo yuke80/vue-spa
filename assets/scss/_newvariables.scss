@@ -1,0 +1,28 @@
+@import './mixin';
+
+// Colors
+$orange: #e93842;
+$red: #C90000;
+$blue: #2E6EAC;
+$gray-70: #707070;
+$gray-ec: #ececec;
+$white: #fff;
+
+
+// Font
+$gothic: YuGothic, "Yu Gothic", "游ゴシック体", "游ゴシック","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "Helvetica Neue", Helvetica, Arial,sans-serif;
+
+$mincho: "Shippori Mincho","游明朝",YuMincho,Hiragino Mincho ProN W3,ヒラギノ明朝 ProN W3,Hiragino Mincho ProN,HG明朝E,ＭＳ Ｐ明朝,ＭＳ 明朝,serif;
+
+$gothic-en:  'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN','Hiragino Sans', 'BIZ UDPGothic', Meiryo, sans-serif;
+
+.gothic {
+  font-family: $gothic;
+}
+.gothic-en {
+  font-family: $gothic-en;
+}
+.mincho {
+  font-family: $mincho;
+}
+.alignC{text-align: center;}

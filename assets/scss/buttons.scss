@@ -1,0 +1,231 @@
+/* ボタン
+/*-------------------------*/
+@import './newvariables';
+
+@mixin btn() {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  min-width: fit-content;
+  padding: 0 20px;
+  width: 100%;
+  height: 7.2rem;
+  border-radius: 50px;
+  white-space: nowrap;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.5;
+
+  @include tabH{
+    height: 6rem;
+  }
+  @include sp{
+    // max-width: unset;
+    height: pv(60);
+    font-size: pv(16);
+  }
+
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.btn{
+
+  &-orange{
+    background-color: $orange;
+    color: $white;
+
+    @include btn;
+
+    &:hover{
+      background-color: darken($orange, 5%);
+      color: $white;
+    }
+  }
+
+  &-red{
+    background-color: #e93842;
+    color: $white;
+
+    @include btn;
+
+    &:hover{
+      background-color: darken(#e93842, 5%);
+      color: $white;
+    }
+  }
+
+  &-black{
+    background-color: #333;
+    color: #fff;
+    padding-right: 0.9em;
+    padding-left: 0.9em;
+    
+    @include btn;
+
+    &:hover{
+      background-color: #fff;
+      opacity: 1;
+      border: 1px solid #333;
+      color: #333;
+    }
+
+    &_border{
+      border: 1px solid $blue;
+      background: white;
+      color: $blue;
+
+      @include btn;
+
+      &:hover{
+        background-color: lighten($blue, 50%);
+        color: $blue;
+      }
+    }
+  }
+
+  &-white{
+    background-color: $white;
+    color: $blue;
+    padding-right: 0.9em;
+    padding-left: 0.9em;
+    
+    @include btn;
+
+    &:hover{
+      background-color: rgba(255, 255, 255, .8);
+      color: $blue;
+    }
+    &_border{
+      border: 1px solid $blue;
+      background: white;
+      color: $blue;
+
+      @include btn;
+
+      &:hover{
+        background-color: lighten($blue, 50%);
+        color: $blue;
+      }
+    }
+  }
+
+  &-light-gray{
+    background-color: #ECECEC;
+    color: $blue;
+    padding-right: 0.9em;
+    padding-left: 0.9em;
+    border: 1px solid #2e6eac;
+
+    @include btn;
+
+    &:hover{
+      background-color: rgba(236, 236, 236, .8);
+      color: $blue;
+    }
+  }
+
+  &-blue{
+    background-color: $blue;
+    color: $white;
+
+    @include btn;
+
+    &:hover{
+      background-color: darken($blue, 5%);
+      color: $white;
+    }
+
+    &_border{
+      border: 1px solid $blue;
+      background: white;
+      color: $blue;
+
+      @include btn;
+
+      &:hover{
+        background-color: lighten($blue, 50%);
+        color: $blue;
+      }
+    }
+  }
+
+  &-transparent{
+    background-color: transparent;
+    color: $white;
+
+    @include btn;
+
+    &:hover{
+      background-color: darken($white, 5%);
+      color: $white;
+    }
+
+    &_border{
+      border: 1px solid $white;
+      color: $white;
+
+      @include btn;
+
+      &:hover{
+        background-color: lighten(transparent, 50%);
+        color: $white;
+      }
+    }
+  }
+}
+.btn-with-arrow{
+  position: relative;
+  margin: 0 10px 20px;
+  padding-right: 1em;
+  padding-left: 1em;
+
+  @include tab{
+    width: calc(50% - 20px);
+  }
+  @include sp{
+    justify-content: center;
+    margin: 0 0 pv(5);
+    width: 100%;
+    height: pv(45);
+    font-size: pv(14);
+  }
+
+  &:after{
+    position: absolute;
+    right: 1em;
+    display: block;
+    width: .7em;
+    height: .7em;
+    border-top: 2px solid $blue;
+    border-right: 2px solid $blue;
+    content: '';
+    transform: rotate(45deg);
+  }
+}
+
+@mixin icon{
+  display: inline-block;
+  margin: 0 .4em;
+  width: 2em;
+  height: 2em;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon{
+
+  &-phone{background-image: url("~assets/images/common/icon_phone.svg");@include icon;}
+  &-web{background-image: url("~assets/images/common/icon_web.svg");@include icon;}
+}
+
+// @media (max-width: 480px){
+// .btn-white {
+//     max-width: 300px;
+//     height: 16vw;
+//     font-size: 4.26667vw;
+// }
+// }

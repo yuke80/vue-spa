@@ -1,0 +1,378 @@
+@import "node_modules/bootstrap/scss/functions";
+@import './variables';
+@import './newvariables';
+@import './buttons';
+@import './labels';
+
+// Then include the following
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
+
+body {
+  font-family: $gothic;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $mincho;
+  span, p {
+    font-size: 1.6rem;
+    font-family: $gothic;
+    line-height: 1.5;
+  }
+}
+h1, .h1 {font-size: 40px;}
+.navbar {
+  padding: 0;
+}
+a {
+  color: #333333;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+.navbar .navbar-collapse {
+  ul li {
+    padding: 0 1rem;
+  }
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.navbar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  min-width: 100%;
+}
+
+// This is to make work on chrome and safari
+.o-center-select {
+  text-align-last: center;
+  text-align: -webkit-center;
+  text-align: center;
+}
+.breadcrumb {
+  padding: 0;
+  margin: 0;
+}
+.breadcrumb--no-bg {
+  background: none;
+}
+
+// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
+// .custom-class {
+//   display: none;
+// }
+// @include media-breakpoint-up(sm) {
+//   .custom-class {
+//     display: block;
+//   }
+// }
+
+ul li {
+  list-style: none;
+  padding-bottom: 0.3rem;
+}
+
+.bg-grey {
+  background-color: #f5f5f5;
+}
+
+.bg-dark-grey {
+  background-color: #333333;
+}
+
+.color-instagram {
+  color: #b43e74;
+}
+
+.color-facebook {
+  color: #465f8d
+}
+
+.title-underlined {
+  font-size: 32px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.title-underlined::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  transform: translateX(-50%);
+  background-color: $primary;
+}
+
+.title-bg-gray {
+  background-color: #f3f3f3;
+  color: #757575;
+  border-top: 1px solid #a0a0a0;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+}
+
+.title-dash {
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  &:before{
+    content: "-";
+  }
+  &:after {
+    content: "-";
+  }
+}
+
+.hr-section {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.text-small {
+  font-size: 0.75em;
+}
+
+.text-large {
+  font-size: 1.3em;
+}
+
+.c-studio-page-icon {
+  color: $zenblue;
+}
+
+// Main content affects everything in default layout.
+// NOT: top page, header, footer
+.main-content {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #333333;
+}
+
+.btn, .custom-select, .form-control,
+.custom-control-input,
+.custom-control-label,
+.custom-checkbox,
+.custom-radio,
+input, label {
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.custom-control-label {
+  padding-left: 0.5rem;
+  padding-top: 0.33rem;
+}
+
+// Checkbox and radio sizes
+.custom-control-label:after,
+.custom-control-label:before {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.text-color-temperature-101 {
+  color: $color-temperature-101;
+}
+.text-color-temperature-102 {
+  color: $color-temperature-102;
+}
+.text-color-temperature-103 {
+  color: $color-temperature-103;
+}
+
+
+@media (max-width: 575px) {
+  h1, .h1 {font-size: 30px;}
+  // Main content affects everything in default layout.
+  // NOT: top page, header, footer
+  .main-content {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  .title-underlined {
+    font-size: 26px;
+  }
+  .title-dash {
+    font-size: 22px;
+  }
+  .title-bg-gray {
+    padding: 1.2rem;
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+.ytb-content{
+ max-width:720px;
+ margin:auto;
+
+ &-left {
+  max-width:711px;
+  margin-left: 0;
+ }
+
+  .ytb-iframe{
+  width: 100%;
+  max-width: 720px;
+  height: 400px;
+	margin: 20px auto!important;
+	display: block;
+  }
+
+  .ytb-iframe-col{
+    width: 100%;
+    max-width: 720px;
+    height: 283px;
+    margin: 20px auto !important;
+    display: block;
+  }
+
+ .ytb-title{
+  font-weight:bold;
+  font-family: $mincho;
+  color:#2E6EAC;
+  border-bottom: 1px solid #2e6eac;
+  padding-bottom:20px;
+
+   span.catch-info{
+    display:inline-block;
+    background:#2E6EAC;
+    color:#fff;
+    font-size:1.3rem;
+    border-radius:30px;
+    padding:4px 10px;
+    text-align: center;
+    vertical-align: middle;
+   }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .ytb-content{  
+   .ytb-iframe, .ytb-iframe-col{
+    width: 100%;
+    height: 200px;
+   }
+ }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .navbar-inner {
+    min-width: auto;
+  }
+
+  .navbar-collapse {
+    padding-right: 1rem;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .container-except-sm {
+    width: 100%;
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) { }
+@include media-breakpoint-up(md) {
+  .container-except-sm {
+    width: 100%;
+    max-width: 720px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .container-except-sm {
+    width: 100%;
+    max-width: 960px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container-max800 {
+    max-width: 800px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .container-except-sm {
+    width: 100%;
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container-max800 {
+    max-width: 800px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .container-except-sm {
+    .row {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+.ref-link {
+ font-size: 1.4rem;
+ color: #777;
+}
+
+.ref-link a{
+  display: inline-block!important;
+  line-height: 1.6rem;
+  padding-bottom: 1px;
+  color: #777;
+  border-bottom: 1px solid #777;
+}
+
+@import 'fonts.scss';
+@import 'preloader.scss';
+@import 'top.scss';
+@import 'badge-colors.scss';
+@import 'gnav.scss';

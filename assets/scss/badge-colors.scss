@@ -1,0 +1,125 @@
+@import './variables';
+
+.badge-studio,.badge-instructor, .badge-classtype {
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  color: #f8fbfd;;
+}
+
+.badge {
+  // Brand badge colors!
+  &.badge-studiobrand-pilates,
+  &.badge-instructorbrand-pilates, &.badge-instructorbrand-pilatis,
+  &.badge-instructorshido-102,
+  &.badge-instructorbrand-basi {
+    background-color: #90b6da;
+  }
+  &.badge-studiobrand-yoga,
+  &.badge-instructorshido-101,
+  &.badge-instructorbrand-yoga {
+    background-color: #f4a35d;
+  }
+  &.badge-studiobrand-strong,
+  &.badge-instructorshido-103,
+  &.badge-instructorbrand-strong {
+    background-color: $yellow;
+  }
+  &.badge-instructorbrand-other {
+    background-color: lightgrey;
+  }
+  &.badge-studiobrand-basi {
+    background-color: $zenred;
+  }
+
+  // Studio temperatures
+  &.badge-temperature-normal {
+    // background-color: #67b82f;
+    border: 1px solid #6ed02b;
+    color: #6ed02b;
+    /*background-color: #ffffff7d;*/
+    width: 50px;
+    text-align: center;
+    font-size: 8px;
+    line-height: 8px;
+    padding: 3px 10px;
+  }
+  &.badge-temperature-hot {
+    // background-color: #e7661d;
+    border: 1px solid #f9802b;
+    color: #f9802b;
+    /*background-color: #ffffff7d;*/
+    width: 50px;
+    text-align: center;
+    font-size: 8px;
+    line-height: 8px;
+    padding: 3px 10px;
+  }
+
+  // Studio facilities
+  &.badge-facilitytype-m {
+    background-color: lightcoral;
+  }
+  &.badge-facilitytype-mg {
+    background-color: lightsalmon;
+  }
+  &.badge-facilitytype-sh {
+    background-color:lightsteelblue;
+  }
+  &.badge-facilitytype-ws {
+    background-color: lightskyblue;
+  }
+
+  // Schedule class types
+  // Private
+  &.badge-classtype-pv {
+    background-color: rgb(254, 238, 241);
+    color: rgb(209, 39, 76);
+    border-radius: 5px;
+  }
+  // Group
+  &.badge-classtype-gl {
+    background-color: rgb(224, 241, 251);
+    color: rgb(6, 118, 156);
+    border-radius: 5px;
+  }
+  &.badge-classtype-mg {
+    background-color: rgb(251, 241, 224);
+    color: rgb(156, 118, 6);
+    border-radius: 5px;
+  }
+
+  &.badge-lesson-temperature {
+    // 22
+    &.badge-lesson-temperature-101 {
+      background-color: $color-temperature-101;
+      color: white;
+    }
+    // 40
+    &.badge-lesson-temperature-102 {
+      background-color: $color-temperature-102;
+      color: white;
+    }
+    // 27
+    &.badge-lesson-temperature-103 {
+      background-color: $color-temperature-103;
+      color: white;
+    }
+  }
+
+  // 検索絞り込み条件のバッジ
+  // 一個一個カスタマイズもできます
+  &.badge-studiosearch-brand {
+    &.badge-studiosearch-brand-basi {
+      // background-color: #90b6da
+    }
+  }
+  &.badge-studiosearch-temperature {
+    &.badge-studiosearch-temperature-hot {
+      // background-color: #e7661d
+    }
+  }
+  &.badge-studiosearch-textfilter {
+  }
+}

@@ -1,0 +1,336 @@
+// pilates
+
+.p-pilates{
+  & &{
+  
+  
+    &-about{
+  
+      h2{
+        margin: 20px 0 80px;
+        color: $blue;
+        text-align: center;
+      }
+  
+      .c-column-alternate2-single{
+        background-position-y: top;
+        p{
+          padding-top: 24px;
+          padding-right: 24px!important;
+        }
+        &:nth-of-type(1){background-image: url('~assets/images/pilates/about-4.webp');}
+  
+  
+      }
+    } // .p-about-mv
+  
+    &-no1{
+      padding: 80px 0;
+
+      @include sp{
+        padding: pv(40) 0;
+      }
+  
+      .top{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+  
+        @media screen and(max-width: 640px){
+          align-items: center;
+          flex-direction: column;
+        }
+  
+        .img{
+          margin-right: 32px;
+          max-width: 200px;
+          @media screen and(max-width: 640px){
+            margin-right: 0;
+            margin-bottom: 32px;
+          }
+  
+  
+          img{
+            width: 100%;
+          }
+        }
+  
+        .content{
+          p{
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1.5;
+
+            @include sp{
+              font-size: pv(16);
+            }
+  
+            span{
+              vertical-align: top;
+              font-size: .4em;
+            }
+  
+            &:before{
+              display: inline-block;
+              margin-right: .5em;
+              width: 1.2em;
+              height: 1.2em;
+              background: url('~assets/images/pilates/no1-crown.webp')no-repeat center/contain;
+              content: '';
+              vertical-align: text-bottom;
+            }
+          }
+        }
+      }
+  
+      .bottom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+  
+        .single{
+          margin: 0 16px 32px;
+          width: 720px;
+          text-align: center;
+  
+          @media screen and(max-width: 640px){
+            max-width: 480px;
+            width: 100%;
+          }
+  
+          p{
+            margin-bottom: 1em;
+            font-weight: bold;
+            font-size: 16px;
+          }
+  
+          img{
+            width: 100%;
+          }
+  
+  
+        }
+      }
+  
+      .desc{
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 20px;
+        max-width: 1000px;
+        font-size: 8px;
+      }
+    }
+  
+  
+    &-reasons{
+      padding: 80px 0;
+
+      @include sp{
+        padding: pv(40) 0;
+      }
+  
+      h2{
+        margin-bottom: 60px;
+
+        @include sp{
+          margin-bottom: pv(30);
+        }
+      }
+  
+      &-single{
+        display: flex;
+        margin-bottom: 16px;
+
+        @include sp{
+          .img{
+            padding-bottom: 40%;
+            width: 100%;
+          }
+  
+          .content{
+            padding: pv(30) pv(25) pv(25);
+            background-size: pv(120);
+  
+            h3{
+              margin-bottom: pv(16);
+              font-size: pv(20);
+  
+              br{
+                display: block;
+              }
+  
+              .subtitle{
+                margin-bottom: pv(6);
+                font-size: pv(13);
+              }
+            }
+  
+            p{
+              font-size: pv(14);
+              line-height: 2.3;
+            }
+          }
+        }
+  
+        &:nth-child(1) .img{background-image: url('~assets/images/pilates/reasons-1.webp');}
+        &:nth-child(2) .img{background-image: url('~assets/images/about/reasons-4.webp');}
+        &:nth-child(3) .img{background-image: url('~assets/images/about/reason-2.webp');}
+        &:nth-child(4) .img{background-image: url('~assets/images/about/reason-3.webp');}
+  
+        &:nth-child(1) .content{background-image: url('~assets/images/pilates/01.webp');}
+        &:nth-child(2) .content{background-image: url('~assets/images/pilates/02.webp');}
+        &:nth-child(3) .content{background-image: url('~assets/images/pilates/03.webp');}
+        &:nth-child(4) .content{background-image: url('~assets/images/pilates/04.webp');}
+  
+        .img{
+          width: 45%;
+          background-size: cover;
+        }
+  
+        .content{
+          flex: 1;
+          padding: 40px 50px 30px;
+          min-height: 400px;
+          background: #ececec;
+          background-position: 96% bottom;
+          background-size: 150px;
+          background-repeat: no-repeat;
+  
+          h3{
+            display: inline-block;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid black;
+            font-weight: bold;
+            line-height: 1.6;
+  
+            .subtitle{
+              margin-bottom: 8px;
+              color: $blue;
+              font-size: 16px;
+            }
+          }
+  
+          p{
+            font-size: 16px;
+            line-height: 2.3;
+          }
+        }
+  
+        @media screen and(max-width:768px){
+          flex-direction: column;
+  
+          .img{
+            padding-bottom: 40%;
+            width: 100%;
+          }
+  
+          .content{
+            h3{
+              br{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+  
+      .c-btns{
+        padding-top: 40px;
+
+        @include sp{
+          display: flex!important;
+          align-items: center;
+          flex-direction: column;
+          padding-top: pv(24)!important;
+          a{
+            margin-right: auto!important;
+            margin-bottom: pv(12)!important;
+            margin-left: auto!important;
+            width: pv(325)!important;
+          }
+        }
+      }
+    } // .p-about-reasons
+  
+    &-feature{
+      .c-column-two-single{
+        padding-bottom: 60px;
+        background: #ececec;
+      }
+    }// .p-pilates-feature
+  
+    &-history{
+      padding: 80px 0;
+      background: url('~assets/images/pilates/history-bg.webp')no-repeat center/cover;
+      color: white;
+  
+      h2{
+        margin-bottom: 40px;
+      }
+  
+      p{
+        margin-bottom: 40px;
+        line-height: 2;
+      }
+    } // .p-pilates-history
+  
+    &-mens{
+      padding: 80px 32px 40px;
+      text-align: center;
+      img{
+        max-width: 800px;
+      }
+    }
+  
+    &-about1, &-about2, &-about3, , &-about4{
+      margin-bottom: 60px;
+      padding-top: 80px;
+
+      @include sp{
+        margin-bottom: pv(0);
+        padding-top: pv(20);
+      }
+      .c-column-alternate2-single{
+        background-position-y: top!important;
+      }
+    } // .p-pilates-about
+  
+    &-about1{
+      .c-column-alternate2-single{
+        background-image: url('~assets/images/pilates/about-6.webp');
+      }
+    } // .p-pilates-about
+
+    &-about2{
+      .c-column-alternate2-single{
+        background-image: url('~assets/images/pilates/about-5.webp');
+      }
+    } // .p-pilates-about
+  
+    &-about3{
+      .c-column-alternate2-single{
+        background-image: url('~assets/images/pilates/about-3.webp');
+      }
+    } // .p-pilates-about
+
+    &-about4{
+      .c-column-alternate2-single{
+        background-image: url('~assets/images/pilates/about-7.webp');
+      }
+    } // .p-pilates-about
+  
+    &-knowmore{
+      padding: 40px 0 80px;
+
+      @include sp{
+        padding: pv(60) 0;
+      }
+  
+      h2{
+        margin-bottom: 40px;
+      }
+    }// .p-pilates-knowmore
+  
+  }
+  }
