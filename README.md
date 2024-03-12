@@ -10,9 +10,6 @@
 
 1. Node.js のバージョン v16.14.2 以上 (LTS) が必要です。ダウンロードは[こちら](https://nodejs.org/en/)。または homebrewを使っている場合 `brew install node` でもインストールできます
 2. おすすめの開発ツールは Visual Studio Code (VSCode) です。設定する方法は[こちら](docs/vscode.md)
-3. その他関連資料
-  - /システム部/チーム/エンジニア/開発ルール/保守/保守対象システム一覧/SPA(Node.js)/node.jsアップデート対応メモ
-    https://wiki.zen-jp.info:8443/622739812534c1005075c641
 
 その他のドキュメンテーションは [docsフォルダー](docs/) にあります。
 
