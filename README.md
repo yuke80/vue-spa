@@ -39,6 +39,3 @@ npm run lint
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-/システム部/チーム/エンジニア/開発ルール/保守/保守対象システム一覧/SPA(Node.js)/node.jsアップデート対応メモ
-https://wiki.zen-jp.info:8443/622739812534c1005075c641
