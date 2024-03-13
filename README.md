@@ -2,9 +2,7 @@
 
 > This SPA web application built with [Nuxt.js](https://nuxtjs.org) ([日本語](https://ja.nuxtjs.org)).
 
-
-## ポートフォリオとして、static、images、node_modules、.gitファイルを削除し、githubにアップしています。
-
+# ポートフォリオとして、static、images、node_modules、.gitファイルを削除し、githubにアップしています。
 
 ## 開発環境設置 / How To Setup Development Environment
 
