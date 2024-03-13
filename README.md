@@ -1,4 +1,4 @@
-# Vue SPA
+# Vue.js SPA
 
 > This SPA web application built with [Nuxt.js](https://nuxtjs.org) ([日本語](https://ja.nuxtjs.org)).
 
