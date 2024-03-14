@@ -1,4 +1,4 @@
-## ピラティススタジオSPAサイト（Vue.js）
+## ピラティススタジオSPAサイト(Vue.js)
 > This SPA web application built with [Nuxt.js](https://nuxtjs.org) ([日本語](https://ja.nuxtjs.org)).
 
 ### ポートフォリオとして、static、images、node_modules、.gitファイルを削除し、githubにアップしています。
