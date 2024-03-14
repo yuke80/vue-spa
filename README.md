@@ -1,8 +1,15 @@
 ## ピラティススタジオSPAサイト(Vue.js)
 > This SPA web application built with [Nuxt.js](https://nuxtjs.org) ([日本語](https://ja.nuxtjs.org)).
 
-### ポートフォリオとして、static、images、node_modules、.gitファイルを削除し、githubにアップしています。
-> ポートフォリオ閲覧用だけなので、コピー、転載禁止させていただきます。
+### ポートフォリオとして、static、images、node_modules、gitなどのファイルを消しています。
+
+```
+Descripition: ピラティススタジオSPAサイト。スタジオ検索や予約の入口として機能するほか、会社事業の紹介、ピラティスとヨガの紹介、プロモーションやイベントページも数多くあります。
+Role: UIUXデザイナー / フロントエンジニア / 分析報告
+Tech Stack: Vue.js, HTML5, SCSS, Bootstrap
+
+ポートフォリオ閲覧用だけなので、コピー、転載禁止させていただきます。
+```
 
 #### 開発環境設置 / How To Setup Development Environment
 
