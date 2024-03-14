@@ -4,10 +4,11 @@
 ### ポートフォリオとして、static、images、node_modules、gitなどのファイルを消しています。
 
 ```
-#### Descripition:
-ピラティススタジオSPAサイト。スタジオ検索や予約の入口として機能するほか、会社事業の紹介、ピラティスとヨガの紹介、プロモーションやイベントページも数多くあります。
+Descripition:スタジオ検索や予約の入口として機能するほか、事業、ピラティスとヨガの紹介、イベントページも数多く含まれています。
+
 Role: UIUXデザイナー / フロントエンジニア / 分析報告
-Tech Stack: Vue.js, HTML5, SCSS, Bootstrap
+
+Tech Stack: Vue.js, HTML5, Bootstrap
 
 ポートフォリオ閲覧用だけなので、コピー、転載禁止させていただきます。
 ```
