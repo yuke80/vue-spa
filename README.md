@@ -1,9 +1,8 @@
-# Vue.js SPA
-
+## Vue.js SPAサイト
 > This SPA web application built with [Nuxt.js](https://nuxtjs.org) ([日本語](https://ja.nuxtjs.org)).
 
 ### ポートフォリオとして、static、images、node_modules、.gitファイルを削除し、githubにアップしています。
-##### ポートフォリオ閲覧用だけなので、コピー、転載禁止させていただきます。
+> ポートフォリオ閲覧用だけなので、コピー、転載禁止させていただきます。
 
 #### 開発環境設置 / How To Setup Development Environment
 
